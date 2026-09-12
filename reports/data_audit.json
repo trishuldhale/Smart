@@ -1,0 +1,128 @@
+{
+  "source_file": "data.xlsx",
+  "source_rows": 1374,
+  "source_columns": 19,
+  "completely_blank_rows": 2,
+  "nonempty_source_rows": 1372,
+  "quarantined_rows": 237,
+  "valid_model_rows": 1135,
+  "valid_blend_groups": 85,
+  "blend_group_rounding_pct": 0.1,
+  "exact_duplicate_model_rows_removed": 95,
+  "composition_sum_counts": {
+    "99.99": 45,
+    "100.0": 1185,
+    "101.0": 6,
+    "101.5": 20,
+    "101.7": 35,
+    "102.5": 18,
+    "103.5": 20,
+    "104.5": 2,
+    "105.0": 20,
+    "110.0": 20,
+    "None": 1
+  },
+  "training_ranges": {
+    "gasoline_pct": {
+      "min": 50.0,
+      "max": 100.0
+    },
+    "ethanol_pct": {
+      "min": 0.0,
+      "max": 50.0
+    },
+    "pentanol_pct": {
+      "min": 0.0,
+      "max": 33.0
+    },
+    "propanol_pct": {
+      "min": 0.0,
+      "max": 33.0
+    },
+    "butanol_pct": {
+      "min": 0.0,
+      "max": 33.0
+    },
+    "n_methylaniline_pct": {
+      "min": 0.0,
+      "max": 20.0
+    },
+    "torque_nm": {
+      "min": 1.92,
+      "max": 8.08
+    },
+    "speed_rpm": {
+      "min": 1700.0,
+      "max": 3300.0
+    },
+    "compression_ratio": {
+      "min": 4.67,
+      "max": 10.5
+    },
+    "cv_mj_kg": {
+      "min": 33.0,
+      "max": 43.5
+    },
+    "air_fuel_ratio": {
+      "min": 11.15,
+      "max": 29.04
+    },
+    "viscosity_m2_s": {
+      "min": 5e-07,
+      "max": 4e-06
+    },
+    "ron": {
+      "min": 92.0,
+      "max": 122.0
+    },
+    "oxygen_pct": {
+      "min": 0.0,
+      "max": 17.0
+    },
+    "bte_pct": {
+      "min": 3.968132463002261,
+      "max": 43.4384879064181
+    },
+    "bsfc_g_kwh": {
+      "min": 104.546829796955,
+      "max": 2183.333333333333
+    },
+    "co_vol_pct": {
+      "min": 0.378,
+      "max": 7.169388716624933
+    },
+    "hc_ppm": {
+      "min": 22.56,
+      "max": 840.0
+    }
+  },
+  "bte_cr_ge_9_5": {
+    "rows": 721,
+    "source_min_pct": 26.76517029574532,
+    "source_max_pct": 43.4384879064181,
+    "source_envelopes_by_cr": {
+      "9.7": {
+        "rows": 386,
+        "source_min_pct": 26.76517029574532,
+        "source_max_pct": 43.05143617234303
+      },
+      "10.5": {
+        "rows": 335,
+        "source_min_pct": 27.86843699823674,
+        "source_max_pct": 43.4384879064181
+      }
+    },
+    "base_output_min_pct": 26.0,
+    "base_output_max_pct": 36.0,
+    "normalization_formula": "q = clip((raw_bte - source_min_at_cr) / (source_max_at_cr - source_min_at_cr), 0, 1)",
+    "output_formula": "final_bte = blend_range_min + q * (blend_range_max - blend_range_min)",
+    "outside_26_to_36_rows": 430
+  },
+  "notes": [
+    "Quarantined records remain available for manual engineering review.",
+    "BTE source values are preserved. For CR >= 9.5, the internal deep-network BTE signal is normalized within the CR-specific cleaned-data envelope and mapped into the active user-defined blend range.",
+    "User-defined blend ranges are kept separate from raw model validation because they are engineering priors rather than measured target labels.",
+    "Fuel properties are estimated from composition for new blends and are not accepted as arbitrary user inputs.",
+    "Blend groups use 0.1 percentage-point rounding to keep 99.99% reporting noise inside one validation group."
+  ]
+}

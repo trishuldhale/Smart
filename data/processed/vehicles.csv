@@ -1,0 +1,30 @@
+vehicle_id,company,model,compression_ratio,category,recommended_fuel_ron,fuel_blend_octane,year_of_launch,bs_norm_at_launch,estimated_mileage_on_blend_kmpl,default_gasoline_pct,default_ethanol_pct,default_torque_nm,default_speed_rpm,operating_default_note
+TVS | Jupiter 125,TVS,Jupiter 125,10.0,Scooter,Regular (91),E10 (91–93 RON),2021,BS-VI,48.5,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Yamaha | Ray ZR 125,Yamaha,Ray ZR 125,10.2,Scooter,Regular (91),E10 (91–93 RON),2020,BS-VI,46.56,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Yamaha | Fascino 125,Yamaha,Fascino 125,10.2,Scooter,Regular (91),E10 (91–93 RON),2020,BS-VI,47.53,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Hero | Pleasure+ 110,Hero,Pleasure+ 110,9.9,Scooter,Regular (91),E10 (91–93 RON),2019,BS-VI ready,53.35,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Hero | Destini 125,Hero,Destini 125,9.9,Scooter,Regular (91),E10 (91–93 RON),2018,BS-IV,48.5,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Yamaha | R15 V3,Yamaha,R15 V3,11.6,Mid-range,"Premium (95, tuned 91)","E10, Premium (95 RON)",2017,BS-IV,38.8,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+TVS | Apache RTR 200 4V,TVS,Apache RTR 200 4V,11.0,Mid-range,"Premium (95, tuned 91)","E10, Premium (95 RON)",2016,BS-IV,38.8,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Hero | Maestro Edge 110,Hero,Maestro Edge 110,9.9,Scooter,Regular (91),E5 → E10 (91 RON),2015,BS-IV,E5: 49.25 | E10: 48.5,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Honda | Unicorn 160,Honda,Unicorn 160,10.0,Mid-range,Regular (91),E5 → E10 (91 RON),2014,BS-IV,E5: 59.1 | E10: 58.2,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Honda | Activa 125,Honda,Activa 125,10.0,Scooter,Regular (91),E5 → E10 (91 RON),2014,BS-IV,E5: 47.28 | E10: 46.56,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+TVS | Scooty Zest 110,TVS,Scooty Zest 110,9.5,Scooter,Regular (91),E5 → E10 (91 RON),2014,BS-IV,E5: 49.25 | E10: 48.5,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+KTM | RC 390,KTM,RC 390,12.6,Premium,Premium (95),"E10, Premium (95 RON)",2014,BS-IV,27.16,90.0,10.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+TVS | Jupiter 110,TVS,Jupiter 110,9.6,Scooter,Regular (91),E5 (91 RON),2013,BS-IV,51.71,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+KTM | Duke 200,KTM,Duke 200,11.3,Mid-range,Premium (95),E5 (91 RON),2012,BS-III,34.48,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Royal Enfield | Classic 350 (Old Gen),Royal Enfield,Classic 350 (Old Gen),8.5,Premium,Regular (91),E5 (91 RON),2009,BS-III,40.39,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Yamaha | FZ-S FI,Yamaha,FZ-S FI,9.6,Mid-range,Regular (91),E5 (91 RON),2008,BS-III,46.3,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Bajaj | Pulsar 220F,Bajaj,Pulsar 220F,9.5,Mid-range,Regular (91),E5 (91 RON),2007,BS-II,37.43,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Honda | Shine 125,Honda,Shine 125,10.0,Commuter,Regular (91),E5 (91 RON),2006,BS-II,64.03,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Hero | HF Deluxe,Hero,HF Deluxe,9.9,Commuter,Regular (91),E5 (91 RON),2005,BS-II,64.03,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+TVS | Apache RTR 160,TVS,Apache RTR 160,10.0,Mid-range,Regular (91),E5 (91 RON),2005,BS-II,45.31,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Bajaj | CT 100,Bajaj,CT 100,9.5,Commuter,Regular (91),E5 (91 RON),2004,BS-II,73.88,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+TVS | Scooty Pep+,TVS,Scooty Pep+,9.2,Scooter,Regular (91),E5 (91 RON),2003,BS-II,64.03,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Honda | Dio,Honda,Dio,9.5,Scooter,Regular (91),E5 (91 RON),2002,BS-II,47.28,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Bajaj | Pulsar 150,Bajaj,Pulsar 150,9.5,Mid-range,Regular (91),E5 (91 RON),2001,BS-II,46.3,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Honda | Activa 6G (110),Honda,Activa 6G (110),10.0,Scooter,Regular (91),E5 (91 RON),2001,BS-II,49.25,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Hero | Splendor Plus,Hero,Splendor Plus,9.9,Commuter,Regular (91),E0 → E5 (87–91 RON),1994,BS-I,E0: 70 | E5: 68.95,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Royal Enfield | Bullet 500 (Old Gen),Royal Enfield,Bullet 500 (Old Gen),8.5,Premium,Regular (91),E0 → E5 (87–91 RON),1990,No BS,E0: 30 | E5: 29.55,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+TVS | XL100 (Moped),TVS,XL100 (Moped),9.2,Moped,Regular (91),E0 → E5 (87–91 RON),1980,No BS,E0: 67 | E5: 66.0,95.0,5.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition
+Bajaj | Chetak (Petrol),Bajaj,Chetak (Petrol),7.4,Scooter,Regular (91),E0 (87–91 RON),1972,No BS,40,100.0,0.0,5.51,2500.0,Dataset starting point - verify the intended engine test condition

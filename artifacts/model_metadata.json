@@ -1,0 +1,146 @@
+{
+  "bundle_version": "2.1.0",
+  "model_family": "Deep Neural Network",
+  "deep_hidden_layers": [
+    128,
+    128,
+    64,
+    32
+  ],
+  "holdout_random_state": 2026,
+  "training_rows": 1135,
+  "training_blend_groups": 85,
+  "model_features": [
+    "gasoline_pct",
+    "ethanol_pct",
+    "pentanol_pct",
+    "propanol_pct",
+    "butanol_pct",
+    "n_methylaniline_pct",
+    "torque_nm",
+    "speed_rpm",
+    "compression_ratio"
+  ],
+  "performance_ranges": {
+    "bte_pct": {
+      "min": 3.968132463002261,
+      "max": 43.4384879064181
+    },
+    "bsfc_g_kwh": {
+      "min": 104.546829796955,
+      "max": 2183.333333333333
+    },
+    "co_vol_pct": {
+      "min": 0.378,
+      "max": 7.169388716624933
+    },
+    "hc_ppm": {
+      "min": 22.56,
+      "max": 840.0
+    }
+  },
+  "selected_models": {
+    "bte_pct": "Deep Neural Network (128-128-64-32)",
+    "bsfc_g_kwh": "Deep Neural Network (128-128-64-32)",
+    "co_vol_pct": "Deep Neural Network (128-128-64-32)",
+    "hc_ppm": "Deep Neural Network (128-128-64-32)"
+  },
+  "bte_calculation": {
+    "compression_ratio_threshold": 9.5,
+    "base_range_min_pct": 26.0,
+    "base_range_max_pct": 36.0,
+    "source_envelopes_by_cr": [
+      {
+        "compression_ratio": 9.7,
+        "source_min_pct": 26.76517029574532,
+        "source_max_pct": 43.05143617234303,
+        "source_rows": 386
+      },
+      {
+        "compression_ratio": 10.5,
+        "source_min_pct": 27.86843699823674,
+        "source_max_pct": 43.4384879064181,
+        "source_rows": 335
+      }
+    ],
+    "ethanol_only_rules": [
+      {
+        "rule_id": "E0",
+        "gasoline_pct": 100.0,
+        "ethanol_pct": 0.0,
+        "minimum_pct": 25.0,
+        "maximum_pct": 30.0
+      },
+      {
+        "rule_id": "E5",
+        "gasoline_pct": 95.0,
+        "ethanol_pct": 5.0,
+        "minimum_pct": 27.0,
+        "maximum_pct": 32.0
+      },
+      {
+        "rule_id": "E10",
+        "gasoline_pct": 90.0,
+        "ethanol_pct": 10.0,
+        "minimum_pct": 31.0,
+        "maximum_pct": 35.0
+      },
+      {
+        "rule_id": "E15",
+        "gasoline_pct": 85.0,
+        "ethanol_pct": 15.0,
+        "minimum_pct": 26.0,
+        "maximum_pct": 31.0
+      },
+      {
+        "rule_id": "E20",
+        "gasoline_pct": 80.0,
+        "ethanol_pct": 20.0,
+        "minimum_pct": 23.0,
+        "maximum_pct": 30.0
+      }
+    ],
+    "additive_rules": [
+      {
+        "rule_id": "E10_P5",
+        "gasoline_pct": 85.0,
+        "ethanol_pct": 10.0,
+        "additive": "pentanol_pct",
+        "additive_pct": 5.0,
+        "minimum_pct": 32.0,
+        "maximum_pct": 37.0
+      },
+      {
+        "rule_id": "E10_Pr5",
+        "gasoline_pct": 85.0,
+        "ethanol_pct": 10.0,
+        "additive": "propanol_pct",
+        "additive_pct": 5.0,
+        "minimum_pct": 31.0,
+        "maximum_pct": 35.0
+      },
+      {
+        "rule_id": "E10_B5",
+        "gasoline_pct": 85.0,
+        "ethanol_pct": 10.0,
+        "additive": "butanol_pct",
+        "additive_pct": 5.0,
+        "minimum_pct": 31.0,
+        "maximum_pct": 35.0
+      },
+      {
+        "rule_id": "E10_NMA5",
+        "gasoline_pct": 85.0,
+        "ethanol_pct": 10.0,
+        "additive": "n_methylaniline_pct",
+        "additive_pct": 5.0,
+        "minimum_pct": 31.0,
+        "maximum_pct": 37.0
+      }
+    ],
+    "normalization_formula": "q = clip((raw_bte - source_min_at_cr) / (source_max_at_cr - source_min_at_cr), 0, 1)",
+    "output_formula": "final_bte = blend_range_min + q * (blend_range_max - blend_range_min)",
+    "e5_assumption": "95% gasoline + 5% ethanol; 27% in the prompt was interpreted as the lower BTE bound because 95% + 27% is invalid."
+  },
+  "support_distance_threshold": 1.3199686305384997
+}
